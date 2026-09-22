@@ -1,0 +1,22 @@
+#api call for listing employees
+###
+GET http://127.0.0.1:8000/employee/
+Accept: application/json
+
+#api call for create employees
+###
+POST http://127.0.0.1:8000/employee/
+Content-Type: application/json
+
+{
+    "name":"godu",
+    "department":"cs",
+    "salary":12000,
+    "location":"ekm",
+    "email":"godu@gmail.com"
+}
+
+#api call for retrieving employees
+###
+GET http://127.0.0.1:8000/employee/1/
+Accept: application/json
