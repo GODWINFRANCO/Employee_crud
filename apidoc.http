@@ -13,10 +13,28 @@ Content-Type: application/json
     "department":"cs",
     "salary":12000,
     "location":"ekm",
-    "email":"godu@gmail.com"
+    "email":"godus@gmail.com"
 }
 
 #api call for retrieving employees
 ###
 GET http://127.0.0.1:8000/employee/1/
 Accept: application/json
+
+#api call for delete employees
+###
+DELETE http://127.0.0.1:8000/employee/1/
+Accept: application/json
+
+#api call for updating employees
+###
+PUT http://127.0.0.1:8000/employee/1/
+Content-Type: application/json
+
+{
+    "name":"hello",
+    "department":"it",
+    "salary":12000,
+    "location":"ekm",
+    "email":"hello@gmail.com"
+}
